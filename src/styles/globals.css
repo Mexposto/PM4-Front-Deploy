@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-font: "Hind", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--primary-font);
+  background-color: #000;
+  color: #f5f5f7;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  background-color: muted;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  height: 3rem;
+}
